@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901154C321C8419100DB1A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901154C221C8419100DB1A98 /* Assets.xcassets */; };
 		90F95AF921C812B700AC5057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F95AF821C812B700AC5057 /* AppDelegate.swift */; };
-		90F95AFB21C812B700AC5057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F95AFA21C812B700AC5057 /* ViewController.swift */; };
 		90F95AFE21C812B700AC5057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F95AFC21C812B700AC5057 /* Main.storyboard */; };
-		90F95B0021C812B800AC5057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F95AFF21C812B800AC5057 /* Assets.xcassets */; };
 		90F95B0321C812B800AC5057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F95B0121C812B800AC5057 /* LaunchScreen.storyboard */; };
+		90F95B2E21C815A700AC5057 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F95B2D21C815A700AC5057 /* State.swift */; };
+		90F95B3621C81D6700AC5057 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F95B3521C81D6700AC5057 /* StateController.swift */; };
+		90F95B3B21C8277900AC5057 /* StatesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F95B3A21C8277900AC5057 /* StatesCollectionViewController.swift */; };
+		90F95B3E21C828E200AC5057 /* StateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F95B3D21C828E200AC5057 /* StateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		901154C221C8419100DB1A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F95AF521C812B700AC5057 /* state flags 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "state flags 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F95AF821C812B700AC5057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90F95AFA21C812B700AC5057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90F95AFD21C812B700AC5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90F95AFF21C812B800AC5057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90F95B0221C812B800AC5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F95B0421C812B800AC5057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F95B2D21C815A700AC5057 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		90F95B3521C81D6700AC5057 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		90F95B3A21C8277900AC5057 /* StatesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesCollectionViewController.swift; sourceTree = "<group>"; };
+		90F95B3D21C828E200AC5057 /* StateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		90F95AF721C812B700AC5057 /* state flags 2 */ = {
 			isa = PBXGroup;
 			children = (
+				90F95B3D21C828E200AC5057 /* StateCollectionViewCell.swift */,
+				90F95B3C21C8278500AC5057 /* ModelController */,
+				90F95B3421C81D4800AC5057 /* Model */,
+				90F95B2F21C815AF00AC5057 /* Resources */,
+			);
+			path = "state flags 2";
+			sourceTree = "<group>";
+		};
+		90F95B2F21C815AF00AC5057 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				90F95AF821C812B700AC5057 /* AppDelegate.swift */,
-				90F95AFA21C812B700AC5057 /* ViewController.swift */,
 				90F95AFC21C812B700AC5057 /* Main.storyboard */,
-				90F95AFF21C812B800AC5057 /* Assets.xcassets */,
+				901154C221C8419100DB1A98 /* Assets.xcassets */,
 				90F95B0121C812B800AC5057 /* LaunchScreen.storyboard */,
 				90F95B0421C812B800AC5057 /* Info.plist */,
 			);
-			path = "state flags 2";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90F95B3421C81D4800AC5057 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90F95B2D21C815A700AC5057 /* State.swift */,
+				90F95B3521C81D6700AC5057 /* StateController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90F95B3C21C8278500AC5057 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				90F95B3A21C8277900AC5057 /* StatesCollectionViewController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F95B0321C812B800AC5057 /* LaunchScreen.storyboard in Resources */,
-				90F95B0021C812B800AC5057 /* Assets.xcassets in Resources */,
+				901154C321C8419100DB1A98 /* Assets.xcassets in Resources */,
 				90F95AFE21C812B700AC5057 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F95AFB21C812B700AC5057 /* ViewController.swift in Sources */,
+				90F95B3E21C828E200AC5057 /* StateCollectionViewCell.swift in Sources */,
 				90F95AF921C812B700AC5057 /* AppDelegate.swift in Sources */,
+				90F95B3621C81D6700AC5057 /* StateController.swift in Sources */,
+				90F95B3B21C8277900AC5057 /* StatesCollectionViewController.swift in Sources */,
+				90F95B2E21C815A700AC5057 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57FTCZV5HS;
-				INFOPLIST_FILE = "state flags 2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/state flags 2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57FTCZV5HS;
-				INFOPLIST_FILE = "state flags 2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/state flags 2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
